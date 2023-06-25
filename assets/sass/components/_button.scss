@@ -1,0 +1,12 @@
+.base-btn {
+  min-width: 12rem;
+  height: 3.8rem;
+  color: #fff;
+  background-color: #000;
+
+  &:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+  }
+}

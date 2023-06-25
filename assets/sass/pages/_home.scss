@@ -1,2 +1,173 @@
 #home {
+  .main {
+    margin-top: var(--header-h);
+
+    .slider {
+      .carousel-caption {
+        bottom: 2.8rem;
+      }
+
+      h3 {
+        font-family: var(--secondary-font);
+        font-size: 2.4rem;
+        margin-bottom: 1.7rem;
+      }
+
+      p {
+        font-weight: 700;
+      }
+    }
+
+    .band {
+      .band-description {
+        text-align: justify;
+        margin-bottom: 1.5rem;
+      }
+
+      .member {
+        padding: 3.2rem 0;
+        @include flex(center, center, nowrap);
+
+        &-item {
+          flex: 1;
+          padding-bottom: 1.6rem;
+        }
+
+        &-name {
+          font-size: 1.5rem;
+          font-weight: 500;
+          text-align: center;
+          margin: 1.5rem 0;
+        }
+
+        &-cover {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .tour {
+      background-color: #000;
+
+      .base-title,
+      .base-slogan {
+        color: #fff;
+      }
+
+      .ticket {
+        margin-top: 4rem;
+        background-color: #fff;
+
+        &-item {
+          position: relative;
+          padding: 8px 16px;
+          border-bottom: 1px solid #ddd;
+        }
+
+        &-sold {
+          display: inline-block;
+          padding: 0 8px;
+          margin-left: 1.5rem;
+          color: #fff;
+          background-color: #f44336;
+        }
+
+        &-quantity {
+          --size: 3rem;
+          position: absolute;
+          top: 50%;
+          right: 3.2rem;
+          transform: translateY(-50%);
+
+          display: block;
+          width: var(--size);
+          height: var(--size);
+          line-height: var(--size);
+          text-align: center;
+
+          color: #fff;
+          background-color: #000;
+          border-radius: 50%;
+        }
+      }
+
+      .address {
+        margin-top: 3.2rem;
+        @include flex(center, center, nowrap);
+        gap: 1.6rem;
+
+        &-item {
+          background-color: #fff;
+        }
+
+        &-img {
+          background-color: #000;
+        }
+
+        &-img:hover > img {
+          opacity: 0.6;
+        }
+
+        &-body {
+          padding: 1.6rem;
+        }
+
+        &-title {
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        &-date {
+          margin: 1.5rem 0;
+          opacity: 0.6;
+        }
+
+        &-desc {
+          color: #000;
+        }
+      }
+    }
+
+    .contact {
+      &-body {
+        margin-top: 4.6rem;
+        @include flex(space-between, start);
+      }
+
+      &-info {
+        li {
+          font-size: 1.8rem;
+          line-height: 27px;
+        }
+
+        i {
+          min-width: 20px;
+        }
+
+        span {
+          margin-left: 8px;
+        }
+      }
+
+      &-form {
+        &-control {
+          @include flex(space-between);
+          margin-bottom: 1.5rem;
+          gap: 1.5rem;
+        }
+
+        &-control:last-child {
+          justify-content: flex-end;
+        }
+
+        input {
+          font-size: 1.5rem;
+          padding: 8px;
+          border: 1px solid #ccc;
+          flex: 1;
+        }
+      }
+    }
+  }
 }

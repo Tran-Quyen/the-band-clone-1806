@@ -1,0 +1,70 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @include flex(space-between);
+  background-color: #000;
+  height: var(--header-h);
+
+  .nav {
+    @include flex(start);
+
+    &-item {
+      position: relative;
+    }
+
+    &-item > a {
+      display: block;
+      height: var(--header-h);
+      line-height: var(--header-h);
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 2.4rem;
+    }
+
+    &-item:hover > a {
+      color: #000;
+      background-color: #ccc;
+    }
+
+    &-item:hover > .subnav {
+      display: block;
+    }
+
+    .subnav {
+      display: none;
+      min-width: 16rem;
+
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .subnav-item > a {
+      width: 100%;
+      display: block;
+      color: #000;
+      font-size: 1.5rem;
+      padding: 8px 16px;
+      line-height: 22.5px;
+    }
+
+    .subnav-item:hover > a {
+      background-color: #ccc;
+    }
+  }
+
+  .search-btn {
+    padding: 0 2.4rem;
+    height: 100%;
+    color: #fff;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #f44336;
+    }
+  }
+}

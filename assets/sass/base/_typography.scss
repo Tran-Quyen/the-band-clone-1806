@@ -1,5 +1,21 @@
+h3,
+p,
+li {
+  font-family: var(--main-font);
+}
+
 .base-title {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
 }
 
 .base-slogan {
+  font-style: italic;
+  margin: 1.5rem 0;
+  text-align: center;
+  opacity: 0.6;
 }
