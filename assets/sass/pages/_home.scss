@@ -28,9 +28,21 @@
         padding: 3.2rem 0;
         @include flex(center, center, nowrap);
 
+        @include mobile {
+          flex-wrap: wrap;
+
+          img {
+            width: 100%;
+          }
+        }
+
         &-item {
           flex: 1;
           padding-bottom: 1.6rem;
+
+          @include mobile {
+            flex: 100%;
+          }
         }
 
         &-name {
@@ -97,12 +109,26 @@
         @include flex(center, center, nowrap);
         gap: 1.6rem;
 
+        @include mobile {
+          flex-wrap: wrap;
+        }
+
         &-item {
           background-color: #fff;
+
+          @include mobile {
+            flex: 100%;
+          }
         }
 
         &-img {
           background-color: #000;
+
+          > img {
+            @include mobile {
+              width: 100%;
+            }
+          }
         }
 
         &-img:hover > img {
@@ -151,6 +177,10 @@
       }
 
       &-form {
+        @include mobile {
+          flex: 100%;
+        }
+
         &-control {
           @include flex(space-between);
           margin-bottom: 1.5rem;
@@ -166,6 +196,10 @@
           padding: 8px;
           border: 1px solid #ccc;
           flex: 1;
+
+          @include mobile {
+            flex: 100%;
+          }
         }
       }
     }

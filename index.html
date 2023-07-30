@@ -64,36 +64,84 @@
   <body>
     <div id="home">
       <div class="header">
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#band">Band</a>
-          </li>
-          <li class="nav-item">
-            <a href="#tour">Tour</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="#"
-              >More
-              <i class="fa-solid fa-caret-down"></i>
-            </a>
+        <!-- Nav Desktop -->
+        <div class="nav-desktop">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#band">Band</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tour">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >More
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
 
-            <ul class="subnav">
-              <li class="subnav-item"><a href="#">Merchandise</a></li>
-              <li class="subnav-item"><a href="#">Extras</a></li>
-              <li class="subnav-item"><a href="#">Media</a></li>
-            </ul>
-          </li>
-        </ul>
+              <ul class="subnav">
+                <li class="subnav-item">
+                  <a class="nav-link" href="#">Merchandise</a>
+                </li>
+                <li class="subnav-item">
+                  <a class="nav-link" href="#">Extras</a>
+                </li>
+                <li class="subnav-item">
+                  <a class="nav-link" href="#">Media</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-        <button class="search-btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- Nav Mobile -->
+        <div class="nav-mobile">
+          <a href="#" class="nav-link">Home</a>
+
+          <button class="nav-mobile-menu-btn" data-toggle-menu="nav">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <ul class="nav" data-menu="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#band">Band</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tour">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item" data-toggle-menu="subnav">
+              <a class="nav-link" href="#"
+                >More
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+
+              <ul class="subnav" data-menu="subnav">
+                <li class="subnav-item">
+                  <a class="nav-link" href="#">Merchandise</a>
+                </li>
+                <li class="subnav-item">
+                  <a class="nav-link" href="#">Extras</a>
+                </li>
+                <li class="subnav-item">
+                  <a class="nav-link" href="#">Media</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="main">

@@ -1,0 +1,28 @@
+$min-lg: 64em;
+$max-md: 63.9375em;
+$min-md: 46.25em;
+$max-sm: 46.1875em;
+
+@mixin desktop {
+  @media screen and (min-width: #{$min-lg}) {
+    @content;
+  }
+}
+
+@mixin tablet_and_mobile {
+  @media screen and (max-width: #{$max-md}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$max-md}) and (min-width: #{$min-md}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$max-sm}) {
+    @content;
+  }
+}
